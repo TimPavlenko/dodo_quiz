@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Додо пицца</title>
+    <style>
+        body {
+            background: url(../../static/fon2.jpg);
+            background-size: 100%;
+        }
+        #first_img{
+            margin-left: 6%;
+            border: 1px solid #FF6900;
+            border-radius: 8px;
+        }
+        #second_img{
+            margin-left:2%;
+            border: 1px solid #FF6900;
+            border-radius:8px;
+        }
+        #third_img{
+            margin-left:2%;
+            border: 1px solid #FF6900;
+            border-radius:8px;
+        }
+        #fourth_img{
+            margin-left:2%;
+            border: 1px solid #FF6900;
+            border-radius:8px;
+        }
+        #first_button{
+            position: absolute;
+            bottom:370px;
+            left:104px;
+            border: 1px solid #FF6900;
+            border-radius: 8px;
+            width: 300px;
+            height: 40px;
+            background: #FF6900;
+            color:#FFF;
+            font: 23pt sans-serif;
+        }
+        #second_button{
+            position: absolute;
+            bottom:370px;
+            left:438px;
+            border: 1px solid #FF6900;
+            border-radius: 8px;
+            width: 300px;
+            height: 40px;
+            background: #FF6900;
+            color:#FFF;
+            font: 23pt sans-serif;
+        }
+        #third_button {
+            position: absolute;
+            bottom:370px;
+            left:774px;
+            border: 1px solid #FF6900;
+            border-radius: 8px;
+            width: 300px;
+            height: 40px;
+            background: #FF6900;
+            color:#FFF;
+            font: 23pt sans-serif;
+        }
+        #fourth_button {
+            position: absolute;
+            bottom:370px;
+            right:126px;
+            border: 1px solid #FF6900;
+            border-radius: 8px;
+            width: 300px;
+            height: 40px;
+            background: #FF6900;
+            color:#FFF;
+            font: 23pt sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <img id="first_img" src="/static/time1.png" width="300" height="300">
+    <img id="second_img" src="/static/time2.png" width="300" height="300">
+    <img id="third_img" src="/static/time3.png" width="300" height="300">
+    <img id="fourth_img" src="/static/time4.png" width="300" height="300">
+    <form action="/open_i/15m" method="post" enctype="application/x-www-form-urlencoded">
+        <button id="first_button">Через 15 минут</button>
+    </form>
+    <form action="/open_i/30m" method="post" enctype="application/x-www-form-urlencoded">
+        <button id="second_button">Через 30 минут</button>
+    </form>
+    <form action="/open_i/60m" method="post" enctype="application/x-www-form-urlencoded">
+        <button id="third_button">Через час</button>
+    </form>
+    <form action="/open_i/no_m" method="post" enctype="application/x-www-form-urlencoded">
+        <button id="fourth_button">Без разницы</button>
+    </form>
+</body>
+</html>
